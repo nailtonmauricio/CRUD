@@ -17,10 +17,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     $res = $conn->prepare($sql);
     $res->bindValue("name", $register_name, PDO::PARAM_STR);
     $res->bindValue("birth_day", $data["register_birth_date"], PDO::PARAM_STR);
-    $res->bindValue("document", $data["register_document"], PDO::PARAM_STR);
-    $res->bindValue("phone", $data["register_phone"], PDO::PARAM_STR);
-    $res->bindValue("email", $data["register_email"], PDO::PARAM_STR);
-    $res->bindValue("address", $data["register_address"], PDO::PARAM_STR);
+    $res->bindValue("document", !empty($data["register_document"])?$data["register_document"]: null, PDO::PARAM_STR);
+    $res->bindValue("phone", !empty($data["register_phone"])?$data["register_phone"]: null, PDO::PARAM_STR);
+    $res->bindValue("email", !empty($data["register_email"])?$data["register_email"]: null, PDO::PARAM_STR);
+    $res->bindValue("address", !empty($data["register_address"])?$data["register_address"]: null, PDO::PARAM_STR);
     $res->bindValue("frequency_id", $data["register_frequency"], PDO::PARAM_INT);
     $res->bindValue("payment_id", $data["register_payment"], PDO::PARAM_INT);
     $res->bindValue("contribution", $register_contribution, PDO::PARAM_STR);
