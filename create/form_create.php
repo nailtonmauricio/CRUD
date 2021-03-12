@@ -33,7 +33,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="register_document" class="form-label">Document</label>
-                        <input type="text" class="form-control document" id="register_document" name="register_document" aria-describedby="cpfHelp" placeholder="999.999.999-99" minlength="14" required/>
+                        <input type="text" class="form-control document" id="register_document" name="register_document" aria-describedby="cpfHelp" placeholder="999.999.999-99" minlength="14"/>
                         <div id="cpfHelp" class="form-text">Please set your social number</div>
                         <div class="valid-feedback">
                             Looks good!
@@ -44,7 +44,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="register_phone" class="form-label">Phone</label>
-                        <input type="tel" class="form-control phone" id="register_phone" name="register_phone" aria-describedby="phoneHelp" placeholder="(99) 99999-9999" required/>
+                        <input type="tel" class="form-control phone" id="register_phone" name="register_phone" aria-describedby="phoneHelp" placeholder="(99) 99999-9999"/>
                         <div id="phoneHelp" class="form-text">Please set your phone number</div>
                         <div class="valid-feedback">
                             Looks good!
@@ -55,7 +55,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="register_email" class="form-label">E-mail</label>
-                        <input type="email" class="form-control" id="register_email" name="register_email" aria-describedby="emailHelp" placeholder="suport@domain.com" required/>
+                        <input type="email" class="form-control" id="register_email" name="register_email" aria-describedby="emailHelp" placeholder="suport@domain.com"/>
                         <div id="emailHelp" class="form-text">Please set your E-mail address</div>
                         <div class="valid-feedback">
                             Looks good!
@@ -66,7 +66,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="register_address" class="form-label">Address</label>
-                        <input type="text" class="form-control" id="register_address" name="register_address" aria-describedby="addressHelp" minlength="10" required/>
+                        <input type="text" class="form-control" id="register_address" name="register_address" aria-describedby="addressHelp" minlength="10"/>
                         <div id="addressHelp" class="form-text">Please set your address</div>
                         <div class="valid-feedback">
                             Looks good!
